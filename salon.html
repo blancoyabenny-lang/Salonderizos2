@@ -1,0 +1,1061 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURACIÓN DE LA PÁGINA
+         ===================================================== -->
+
+    <!-- Permite utilizar caracteres como: ñ, á, é, í, ó, ú -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte correctamente
+         a celulares, tablets y computadoras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nombre que aparece en la pestaña del navegador -->
+    <title>Rizos Studio | Cuidado de rizos</title>
+
+    <!-- Conecta este archivo HTML con nuestro archivo CSS.
+         El CSS contiene los colores, tamaños, posiciones,
+         animaciones y diseño de la página. -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         MENÚ PRINCIPAL
+         ===================================================== -->
+
+    <!--
+        <header> representa la parte superior de la página.
+
+        class="encabezado" permite darle diseño mediante CSS.
+
+        Aquí tenemos:
+        - El logo
+        - El menú de navegación
+        - El botón de reservar
+    -->
+
+    <header class="encabezado">
+
+
+        <!-- LOGO -->
+
+        <!--
+            Al hacer clic en el logo, lleva nuevamente
+            a la sección que tiene id="inicio".
+        -->
+
+        <a href="#inicio" class="logo">
+            Rizos<span>Studio</span>
+        </a>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+
+        <nav class="menu">
+
+            <!-- Cada enlace lleva a una sección diferente
+                 de la misma página -->
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="#servicios">Servicios</a>
+
+            <a href="#nosotros">Nosotros</a>
+
+            <a href="#contacto">Contacto</a>
+
+             <a href="#reservar">Reservar</a>
+
+        </nav>
+
+
+        
+        <!-- BOTÓN DE RESERVAR, este fue el ultimo agg  -->
+        <!--
+            Este botón también lleva a la sección Contacto,
+            donde tenemos la información para reservar.-->
+
+        <a href="#contacto" class="boton-menu">
+            Reservar
+        </a>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+         ===================================================== -->
+
+    <!--
+        <main> contiene el contenido principal
+        de nuestra página web.
+    -->
+
+    <main>
+
+
+
+        <!-- =================================================
+             PORTADA / INICIO
+             ================================================= -->
+
+        <!--
+            id="inicio" permite que los enlaces que tienen
+            href="#inicio" lleguen directamente aquí.
+
+            class="hero" permite darle el diseño de portada
+            desde el archivo CSS.
+        -->
+
+        <section id="inicio" class="hero">
+
+
+            <!-- TEXTO PRINCIPAL DE LA PORTADA -->
+
+            <div class="hero-texto">
+
+
+                <!-- Texto pequeño superior -->
+
+                <p class="pequeno-titulo">
+                    SALÓN ESPECIALIZADO EN RIZOS
+                </p>
+
+
+                <!-- Título principal -->
+
+                <h1>
+                    Tus rizos merecen
+                    <em>verse increíbles.</em>
+                </h1>
+
+
+                <!-- Descripción del salón -->
+
+                <p class="descripcion">
+                    Un espacio pensado para cuidar, hidratar y
+                    definir tu cabello, resaltando la belleza
+                    natural de tus rizos.
+                </p>
+
+
+                <!-- BOTONES DE LA PORTADA -->
+
+                <div class="botones">
+
+
+                    <!--
+                        Este botón lleva a la sección
+                        "Conoce nuestros servicios".
+                    -->
+
+
+                    <a href="#conoce-servicios" class="boton-principal">
+                        Reservar una cita
+                    </a>
+
+
+                    <!--
+                        Este botón también lleva a la sección
+                        donde se muestran los servicios detallados.
+                    -->
+
+                    <a href="#conoce-servicios" class="boton-secundario">
+                        Ver servicios →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DECORACIÓN DE LA PORTADA -->
+
+            <div class="hero-decoracion">
+
+                <!-- Círculo decorativo -->
+
+                <div class="circulo">
+                    <span>♡</span>
+                </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECCIÓN DE SERVICIOS
+             ================================================= -->
+
+        <!--
+            Esta sección muestra los tres servicios
+            principales de Rizos Studio.
+
+            id="servicios" permite que el menú pueda
+            llevarnos hasta esta parte.
+        -->
+
+        <section id="servicios" class="servicios">
+
+
+            <!-- TÍTULO DE LA SECCIÓN -->
+
+            <div class="titulo-seccion">
+
+                <p class="pequeno-titulo">
+                    LO QUE HACEMOS
+                </p>
+
+                <h2>
+                    Servicios para
+                    <em>tus rizos</em>
+                </h2>
+
+                <p>
+                    Cada cabello es diferente. Por eso trabajamos
+                    pensando en las necesidades de tus rizos.
+                </p>
+
+            </div>
+
+
+
+            <!-- TARJETAS DE SERVICIOS -->
+
+            <div class="tarjetas">
+
+
+                <!-- =========================================
+                     SERVICIO 1
+                     ========================================= -->
+
+                <article class="tarjeta">
+
+                    <!-- Icono decorativo -->
+
+                    <div class="icono">
+                        ♡
+                    </div>
+
+                    <!-- Nombre del servicio -->
+
+                    <h3>
+                        Lavado & Hidratación
+                    </h3>
+
+                    <!-- Descripción -->
+
+                    <p>
+                        Limpieza suave e hidratación para
+                        devolverle suavidad y vida al cabello.
+                    </p>
+
+                    <!--
+                        Al hacer clic lleva a la sección
+                        donde están los detalles de los servicios.
+                    -->
+
+                    <a href="#conoce-servicios">
+                        Conocer más →
+                    </a>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     SERVICIO 2
+                     ========================================= -->
+
+                <!--
+                    "destacada" es una clase adicional.
+                    Se utiliza para darle un diseño diferente
+                    a esta tarjeta mediante CSS.
+                -->
+
+                <article class="tarjeta destacada">
+
+                    <div class="icono">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Definición de Rizos
+                    </h3>
+
+                    <p>
+                        Definimos tus rizos respetando su
+                        patrón natural y buscando un acabado
+                        bonito y duradero.
+                    </p>
+
+                    <a href="#conoce-servicios">
+                        Conocer más →
+                    </a>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     SERVICIO 3
+                     ========================================= -->
+
+                <article class="tarjeta">
+
+                    <div class="icono">
+                        ✿
+                    </div>
+
+                    <h3>
+                        Tratamiento Capilar
+                    </h3>
+
+                    <p>
+                        Tratamientos enfocados en mejorar la
+                        hidratación, brillo y apariencia del cabello.
+                    </p>
+
+                    <a href="#conoce-servicios">
+                        Conocer más →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECCIÓN: CONOCE NUESTROS SERVICIOS
+             ================================================= -->
+
+        <!--
+            Esta sección contiene información más detallada
+            sobre cada uno de los servicios.
+
+            El id="conoce-servicios" es importante porque
+            los botones "Conocer más" llevan hasta aquí.
+        -->
+
+        <section id="conoce-servicios" class="seccion-detalles">
+
+
+            <!-- TÍTULO DE LA SECCIÓN -->
+
+            <div class="encabezado-detalles">
+
+                <p class="subtitulo-detalles">
+                    RIZOS STUDIO
+                </p>
+
+                <h2>
+                    Conoce nuestros servicios
+                </h2>
+
+                <p>
+                    Descubre todo lo que tenemos preparado para
+                    cuidar, hidratar y resaltar la belleza natural
+                    de tus rizos.
+                </p>
+
+            </div>
+
+
+
+            <!-- CONTENEDOR DE LAS TARJETAS -->
+
+            <div class="contenedor-servicios-detalles">
+
+
+
+                <!-- =========================================
+                     TARJETA DETALLADA 1
+                     ========================================= -->
+
+                <div class="tarjeta-servicio-detalle">
+
+
+                    <!-- IMAGEN DEL SERVICIO -->
+
+                    <div class="imagen-servicio">
+
+                        <!--
+                            src indica dónde está guardada
+                            la imagen.
+
+                            "img/lavado.jpg" significa:
+                            - entrar a la carpeta img
+                            - buscar lavado.jpg
+                        -->
+
+                        <img
+                            src="img/lavado.jpg"
+                            alt="Lavado e hidratación"
+                        >
+
+                    </div>
+
+
+
+                    <!-- INFORMACIÓN DEL SERVICIO -->
+
+                    <div class="contenido-servicio">
+
+                        <!-- Número del servicio -->
+
+                        <span class="numero-servicio">
+                            01
+                        </span>
+
+                        <h3>
+                            Lavado & Hidratación
+                        </h3>
+
+                        <p>
+                            Un lavado diseñado para limpiar
+                            profundamente tu cabello y devolverle
+                            hidratación, suavidad y vida a tus rizos.
+                        </p>
+
+                        <!-- Precio -->
+
+                        <div class="precio-servicio">
+                            Desde RD$500
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TARJETA DETALLADA 2
+                     ========================================= -->
+
+                <div class="tarjeta-servicio-detalle">
+
+
+                    <!-- IMAGEN -->
+
+                    <div class="imagen-servicio">
+
+                        <img
+                            src="img/definicion.jpg"
+                            alt="Definición de rizos"
+                        >
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+
+                    <div class="contenido-servicio">
+
+                        <span class="numero-servicio">
+                            02
+                        </span>
+
+                        <h3>
+                            Definición de Rizos
+                        </h3>
+
+                        <p>
+                            Realzamos la forma natural de tus rizos,
+                            aportando definición, brillo y volumen
+                            sin perder su movimiento natural.
+                        </p>
+
+                        <div class="precio-servicio">
+                            Desde RD$1,000
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TARJETA DETALLADA 3
+                     ========================================= -->
+
+                <div class="tarjeta-servicio-detalle">
+
+
+                    <!-- IMAGEN -->
+
+                    <div class="imagen-servicio">
+
+                        <img
+                            src="img/tratamiento.jpg"
+                            alt="Tratamiento capilar"
+                        >
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+
+                    <div class="contenido-servicio">
+
+                        <span class="numero-servicio">
+                            03
+                        </span>
+
+                        <h3>
+                            Tratamiento Capilar
+                        </h3>
+
+                        <p>
+                            Tratamientos especiales para devolverle
+                            fuerza, nutrición e hidratación a tu cabello.
+                        </p>
+
+                        <div class="precio-servicio">
+                            Desde RD$450
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECCIÓN NOSOTROS
+             ================================================= -->
+
+        <!--
+            Aquí presentamos información sobre Rizos Studio.
+        -->
+
+        <section id="nosotros" class="nosotros">
+
+
+            <!-- ELEMENTO DECORATIVO -->
+
+            <div class="nosotros-decoracion">
+
+                <div class="onda"></div>
+
+            </div>
+
+
+            <!-- TEXTO DE LA SECCIÓN -->
+
+            <div class="nosotros-texto">
+
+                <p class="pequeno-titulo">
+                    SOBRE NOSOTROS
+                </p>
+
+                <h2>
+                    Más que un salón,
+                    <em>un espacio para ti.</em>
+                </h2>
+
+                <p>
+                    En Rizos Studio creemos que cada rizo tiene
+                    su propia personalidad. Nuestro propósito es
+                    ayudarte a conocerlo, cuidarlo y disfrutarlo.
+                </p>
+
+                <p>
+                    Creamos un ambiente tranquilo donde puedas
+                    sentirte cómoda mientras cuidamos de tu cabello.
+                </p>
+
+
+                <!-- Botón que lleva a los servicios -->
+
+                <a href="#conoce-servicios" class="boton-principal">
+                    Quiero conocer más
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FRASE
+             ================================================= -->
+
+        <!--
+            Esta sección solamente muestra una frase
+            decorativa relacionada con el concepto del salón.
+        -->
+
+        <section class="frase">
+
+            <p>
+                “Tu cabello no necesita ser perfecto,
+                solo necesita sentirse cuidado.”
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACTO / RESERVACIONES
+             ================================================= -->
+
+        <!--
+            id="contacto" permite que los botones y el menú
+            puedan llevar directamente hasta esta sección.
+
+            class="contacto" permite aplicar el diseño
+            correspondiente desde el CSS.
+        -->
+
+        <section id="contacto" class="contacto">
+
+            <!-- ============================================= REPRODUCTOR DE AUDIO ============================================= --> 
+             
+            <!-- Esta parte permite reproducir un archivo de audio dentro de la página. --> 
+
+              <div class="reproductor-audio">
+
+                 <!-- Título del reproductor -->
+                   <h3> Música de Rizos Studio </h3>
+
+                    <!-- controls hace que aparezcan los controles para reproducir,
+                      pausar y controlar el volumen. -->
+
+                      <audio controls> <!-- src indica la ubicación del archivo.
+
+                         "audio/Download.mp3" significa que el archivo
+                          Download.mp3 está dentro 
+                         de una carpeta llamada "audio".--> 
+
+                         <source src="audio/Download.mp3" 
+                            type="audio/mpeg" >
+
+                          <!-- Mensaje alternativo -->
+                            Tu navegador no puede reproducir este audio. 
+
+                        </audio> 
+
+                    </div>
+
+            <!-- =============================================
+                 VIDEO DE FONDO
+                 ============================================= -->
+
+            <!--
+                Este video funciona como fondo de la sección
+                de contacto.
+
+                autoplay = comienza automáticamente.
+                muted = empieza sin sonido.
+                loop = se repite continuamente.
+                playsinline = permite reproducirlo correctamente
+                en dispositivos móviles.
+            -->
+
+            <video
+                class="video-fondo"
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+
+                <!--
+                    El video está dentro de la carpeta "videos".
+                -->
+
+                <source
+                    src="videos/rizos.mp4"
+                    type="video/mp4"
+                >
+
+                <!-- Mensaje alternativo -->
+
+                Tu navegador no puede reproducir este video.
+
+            </video>
+
+
+
+            <!-- =============================================
+                 CAPA OSCURA
+                 ============================================= -->
+
+            <!--
+                Esta capa se coloca sobre el video mediante CSS.
+
+                Su función es oscurecer un poco el video para
+                que el texto de la sección sea más fácil de leer.
+            -->
+
+            <div class="capa-fondo"></div>
+
+
+
+            <!-- =============================================
+                 TEXTO DE CONTACTO
+                 ============================================= -->
+
+            <div class="contenido-contacto">
+
+                <p class="pequeno-titulo">
+                    RESERVA TU CITA
+                </p>
+
+                <h2>
+                    ¿Lista para consentir
+                    <em>tus rizos?</em>
+                </h2>
+
+                <p>
+                    Escríbenos y agenda tu próxima cita.
+                    Será un placer atenderte.
+                </p>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DATOS DE CONTACTO
+                 ============================================= -->
+
+            <div class="datos">
+
+                <!-- Ubicación -->
+
+                <p>
+                    Ubicacion: San Francisco de Macorís
+                </p>
+
+                <!-- Número de teléfono -->
+
+                <p>
+                    Telefono: 829-740-3610
+                </p>
+
+                <!-- Instagram -->
+
+                <p>
+                    IG:@rizosstudio
+                </p>
+
+
+                <!-- Botón para reservar -->
+
+                <a href="#" class="boton-principal">
+                    Reservar ahora
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- =====================================================
+           SECCIÓN DE RESERVACIÓN
+     ===================================================== --><
+    <!-- =================================================
+          FORMULARIO DESPLEGABLE
+         ================================================= -->
+
+    <details class="formulario-desplegable">
+
+        <!-- Este texto funciona como botón desplegable -->
+        <summary>
+            Reservar una cita
+            <span>＋</span>
+        </summary>
+
+
+        <!-- Contenido que aparece al abrir -->
+        <div class="contenido-formulario">
+
+            <form>
+
+
+                <!-- NOMBRE -->
+                <div class="campo-reserva">
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre"
+                    >
+
+                </div>
+
+
+                <!-- TELÉFONO -->
+                <div class="campo-reserva">
+
+                    <label for="telefono">
+                        Número de teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="829-000-0000"
+                    >
+
+                </div>
+
+
+                <!-- SERVICIO -->
+                <div class="campo-reserva">
+
+                    <label for="servicio">
+                        Selecciona tu servicio
+                    </label>
+
+                    <select id="servicio">
+
+                        <option>
+                            Selecciona un servicio
+                        </option>
+
+                        <option>
+                            Lavado & Hidratación — RD$500
+                        </option>
+
+                        <option>
+                            Definición de Rizos — RD$1,000
+                        </option>
+
+                        <option>
+                            Tratamiento Capilar — RD$450
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FECHA -->
+                <div class="campo-reserva">
+
+                    <label for="fecha">
+                        Fecha de la cita
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                    >
+
+                </div>
+
+
+                <!-- HORA -->
+                <div class="campo-reserva">
+
+                    <label for="hora">
+                        Hora de la cita
+                    </label>
+
+                    <select id="hora">
+
+                        <option>
+                            Selecciona una hora
+                        </option>
+
+                        <option>9:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>1:00 PM</option>
+                        <option>2:00 PM</option>
+                        <option>3:00 PM</option>
+                        <option>4:00 PM</option>
+                        <option>5:00 PM</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SERVICIOS ADICIONALES -->
+                <div class="adicionales">
+
+                    <p>
+                        Servicios adicionales
+                    </p>
+
+                    <label>
+                        <input type="checkbox">
+                        Hidratación profunda — RD$300
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Definición extra — RD$250
+                    </label>
+
+                </div>
+
+
+                <!-- =================================================
+                     RESUMEN TIPO FACTURA
+                     ================================================= -->
+
+                <div class="factura">
+
+                    <div class="factura-encabezado">
+
+                        <h3>
+                            Rizos<span>Studio</span>
+                        </h3>
+
+                        <p>
+                            RESUMEN DE RESERVA
+                        </p>
+
+                    </div>
+
+
+                    <div class="linea-factura">
+                        <span>Servicio</span>
+                        <strong>
+                            Seleccionado arriba
+                        </strong>
+                    </div>
+
+
+                    <div class="linea-factura">
+                        <span>Adicionales</span>
+                        <strong>
+                            Según selección
+                        </strong>
+                    </div>
+
+
+                    <div class="linea-factura">
+                        <span>Fecha</span>
+                        <strong>
+                            Según selección
+                        </strong>
+                    </div>
+
+
+                    <div class="linea-factura">
+                        <span>Hora</span>
+                        <strong>
+                            Según selección
+                        </strong>
+                    </div>
+
+
+                    <div class="total-factura">
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <strong>
+                            Ver precio del servicio
+                        </strong>
+
+                    </div>
+
+
+                    <p class="mensaje-factura">
+                        Gracias por elegir Rizos Studio.
+                        Nos encantará cuidar tus rizos. ♡
+                    </p>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+                <a
+                  href="https://www.youtube.com/"
+                    target="_blank"
+                    class="boton-reserva"
+                >
+                    Solicitar reserva por WhatsApp
+                </a>
+
+            </form>
+
+        </div>
+
+    </details>
+
+</section>
+
+
+</section>
+
+
+
+    <!-- =====================================================
+         PIE DE PÁGINA
+         ===================================================== -->
+
+    <!--
+        <footer> representa la parte final de la página.
+
+        Aquí colocamos nuevamente el logo, una descripción
+        y los derechos de autor.
+    -->
+
+    <footer>
+
+
+        <!-- Logo -->
+
+        <div class="logo">
+            Rizos<span>Studio</span>
+        </div>
+
+
+        <!-- Descripción -->
+
+        <p>
+            Cuidado, definición y amor por tus rizos.
+        </p>
+
+
+        <!-- Derechos de autor -->
+
+        <p class="copyright">
+            © 2026 Rizos Studio. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

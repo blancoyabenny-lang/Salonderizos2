@@ -1,0 +1,2089 @@
+
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+   ================================================== */
+
+/*
+   El símbolo * selecciona TODOS los elementos
+   de nuestra página.
+*/
+ 
+* {
+
+    /* Hace que el ancho y alto de los elementos
+       sean más fáciles de controlar. */
+    box-sizing: border-box;
+
+    /* Hace que cuando hagamos clic en un enlace
+       de la página, el desplazamiento sea suave. */
+    scroll-behavior: smooth;
+}
+
+
+/*
+   CONFIGURACIÓN DEL CUERPO DE LA PÁGINA
+*/
+
+body {
+
+    /* Tipo de letra que tendrá toda la página. */
+    font-family: Arial, sans-serif;
+
+    /* El navegador coloca un margen por defecto.
+       Con 0 lo eliminamos. */
+    margin: 0;
+
+    /* Color de fondo general de la página. */
+    background-color: #fcf8f6;
+
+    /* Color principal del texto. */
+    color: rgb(41, 34, 34);
+
+    /* Espacio entre las líneas de texto. */
+    line-height: 1.6;
+}
+
+
+/*
+   CONFIGURACIÓN GENERAL DE LOS ENLACES
+*/
+
+a {
+
+    /* Quitamos la línea que normalmente aparece
+       debajo de los enlaces. */
+    text-decoration: none;
+}
+
+
+
+/* ==================================================
+   ENCABEZADO Y MENÚ
+   ================================================== */
+
+
+/*
+   .encabezado controla toda la parte superior:
+   logo + menú + botón de reservar.
+*/
+
+.encabezado {
+
+    /* Coloca los elementos uno al lado del otro. */
+    display: flex;
+
+    /* Separa el logo, menú y botón. */
+    justify-content: space-between;
+
+    /* Los centra verticalmente. */
+    align-items: center;
+
+    /* Espacio interno del encabezado. */
+    padding: 22px 7%;
+
+    /* Color de fondo del menú. */
+    background-color: #cfc3ba;
+
+    /* Hace que el menú se mantenga arriba
+       cuando bajamos por la página. */
+    position: sticky;
+
+    /* Indica que debe quedarse pegado
+       en la parte superior. */
+    top: 0;
+
+    /* Hace que el menú aparezca por encima
+       de otros elementos. */
+    z-index: 10;
+
+    /* Línea que aparece debajo del menú. */
+    border-bottom: 1px solid #3b261d;
+}
+
+
+
+/* ==================================================
+   LOGO
+   ================================================== */
+
+.logo {
+
+    /* Tamaño del nombre RizosStudio. */
+    font-size: 28px;
+
+    /* Hace que el texto sea más grueso. */
+    font-weight: bold;
+
+    /* Color del logo. */
+    color: #703737;
+}
+
+
+/* 
+   Esta regla solamente afecta al <span>
+   que está dentro del logo.
+
+   En tu HTML tienes:
+
+   Rizos<span>Studio</span>
+*/
+
+.logo span {
+
+    /* Hace que "Studio" tenga un grosor normal. */
+    font-weight: normal;
+
+    /* Cambia el color de "Studio". */
+    color: #a77978;
+}
+
+
+
+/* ==================================================
+   ENLACES DEL MENÚ
+   ================================================== */
+
+.menu {
+
+    /* Coloca los enlaces uno al lado del otro. */
+    display: flex;
+
+    /* Espacio entre cada enlace. */
+    gap: 30px;
+}
+
+
+.menu a {
+
+    /* Color de los enlaces. */
+    color: #554747;
+
+    /* Tamaño del texto. */
+    font-size: 15px;
+
+    /* Espacio interno del enlace. */
+    padding: 8px 12px;
+
+    /* Forma redondeada del botón. */
+    border-radius: 20px 10px 20px 10px;
+
+    /* Hace que los cambios sean suaves. */
+    transition: 0.3s;
+}
+
+
+/*
+   :hover significa: la interaccion con el mouse
+   "cuando pasemos el mouse por encima".
+*/
+
+.menu a:hover {
+
+    /* Cambia el color del texto. */
+    color: #a77978;
+
+    /* Cambia el fondo. */
+    background-color: #f1dfda;
+
+    /* Cambia la forma de las esquinas. */
+    border-radius: 10px 20px 10px 20px;
+}
+
+
+
+/* ==================================================
+   BOTÓN DEL MENÚ
+   ================================================== */
+
+.boton-menu {
+
+    /* Color de fondo. */
+    background-color: #a77978;
+
+    /* Color del texto. */
+    color: white;
+
+    /* Espacio interno. */
+    padding: 10px 22px;
+
+    /* Forma redondeada tipo rizo. */
+    border-radius: 35px 18px 35px 18px;
+
+    /* Hace suave la animación. */
+    transition: 0.3s;
+}
+
+
+/*
+   Efecto cuando pasamos el mouse
+   sobre el botón Reservar.
+*/
+
+.boton-menu:hover {
+
+    /* Cambia el color. */
+    background-color: #8f6564;
+
+    /* Cambia ligeramente la forma. */
+    border-radius: 18px 35px 18px 35px;
+
+    /* Mueve el botón 2 píxeles hacia arriba. */
+    transform: translateY(-2px);
+}
+
+
+
+/* ==================================================
+   PORTADA
+   ================================================== */
+
+.hero {
+
+    /* Altura mínima de la portada. */
+    min-height: 650px;
+
+    /* Coloca el texto y la decoración
+       uno al lado del otro. */
+    display: flex;
+
+    /* Separa ambas partes. */
+    justify-content: space-between;
+
+    /* Las centra verticalmente. */
+    align-items: center;
+
+    /* Espacio alrededor del contenido. */
+    padding: 80px 10%;
+
+    /* Fondo de la portada. */
+    background-color: #cfc4c0;
+}
+
+
+
+/* ==================================================
+   TEXTO PEQUEÑO DE LAS SECCIONES
+   ================================================== */
+
+.pequeno-titulo {
+
+    /* Color. */
+    color: #a77978;
+
+    /* Tamaño. */
+    font-size: 13px;
+
+    /* Texto más grueso. */
+    font-weight: bold;
+
+    /* Espacio entre las letras. */
+    letter-spacing: 2px;
+}
+
+
+
+/* ==================================================
+   TÍTULO PRINCIPAL
+   ================================================== */
+
+.hero h1 {
+
+    /* Tamaño grande del título. */
+    font-size: 58px;
+
+    /* Espacio entre las líneas. */
+    line-height: 1.1;
+
+    /* Evita que el título sea demasiado ancho. */
+    max-width: 650px;
+
+    /* Espacio alrededor del título. */
+    margin: 15px 0;
+}
+
+
+
+/* ==================================================
+   TEXTO EN CURSIVA
+   ================================================== */
+
+em {
+
+    /* Color de las palabras en cursiva. */
+    color: #a77978;
+
+    /* Tipo de letra diferente. */
+    font-family: Georgia, serif;
+}
+
+
+
+/* ==================================================
+   DESCRIPCIÓN DE LA PORTADA
+   ================================================== */
+
+.descripcion {
+
+    /* Ancho máximo del texto. */
+    max-width: 540px;
+
+    /* Color. */
+    color: #4d3232;
+
+    /* Tamaño de letra. */
+    font-size: 17px;
+}
+
+
+
+/* ==================================================
+   BOTONES DE LA PORTADA
+   ================================================== */
+
+.botones {
+
+    /* Espacio superior. */
+    margin-top: 30px;
+
+    /* Coloca los botones en línea. */
+    display: flex;
+
+    /* Los centra verticalmente. */
+    align-items: center;
+
+    /* Espacio entre botones. */
+    gap: 25px;
+}
+
+
+
+/* BOTÓN PRINCIPAL */
+
+.boton-principal {
+
+    /* Permite controlar mejor el tamaño del enlace. */
+    display: inline-block;
+
+    /* Color de fondo. */
+    background-color: #a77978;
+
+    /* Color del texto. */
+    color: white;
+
+    /* Espacio interno. */
+    padding: 13px 25px;
+
+    /* Forma redondeada. */
+    border-radius: 35px 20px 35px 20px;
+
+    /* Hace suave la animación. */
+    transition: 0.3s;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.boton-principal:hover {
+
+    /* Cambia el color. */
+    background-color: #8f6564;
+
+    /* Cambia la forma de las esquinas. */
+    border-radius: 20px 35px 20px 35px;
+
+    /* Sube ligeramente el botón. */
+    transform: translateY(-2px);
+}
+
+
+
+/* BOTÓN SECUNDARIO */
+
+.boton-secundario {
+
+    /* Color del texto. */
+    color: #554747;
+
+    /* Texto en negrita. */
+    font-weight: bold;
+}
+
+
+
+/* ==================================================
+   DECORACIÓN DE LA PORTADA
+   ================================================== */
+
+.hero-decoracion {
+
+    /* Centra el contenido decorativo. */
+    text-align: center;
+}
+
+
+
+/* ==================================================
+   CÍRCULO
+   ================================================== */
+
+.circulo {
+
+    /* Ancho del círculo. */
+    width: 300px;
+
+    /* Alto del círculo. */
+    height: 300px;
+
+    /* Convierte el elemento en círculo. */
+    border-radius: 50%;
+
+    /* Color del círculo. */
+    background-color: #d9b8b2;
+
+    /* Permite centrar el corazón. */
+    display: flex;
+
+    justify-content:center;
+
+    align-items: center;
+
+    /* Borde alrededor del círculo. */
+    border: 15px solid #f8eeeb;
+}
+
+
+
+/* ==================================================
+   CORAZÓN DEL CÍRCULO
+   ================================================== */
+
+
+/*
+   
+configuracion del circulo
+*/
+
+.circulo span {
+
+    font-size: 80px;
+
+    color: rgb(59, 41, 41);
+
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    /* Permite aplicar transformaciones
+       correctamente. */
+    display: inline-block;
+}
+
+
+
+/* ==================================================
+   EFECTO DEL CORAZÓN
+   ================================================== */
+
+.circulo span:hover {
+
+    /* Agranda el corazón al pasar el mouse. */
+    transform: scale(1.4);
+}
+
+
+
+/* ==================================================
+   CORAZONES QUE APARECEN ALREDEDOR
+   ================================================== */
+
+.circulo span::before,
+.circulo span::after {
+
+    /* Crea un nuevo corazón. */
+    content: "♡";
+
+    /* Permite colocarlo mediante coordenadas. */
+    position: absolute;
+
+    /* Color. */
+    color: rgb(37, 24, 24);
+
+    /* Tamaño. */
+    font-size: 25px;
+
+    /* Comienza invisible. */
+    opacity: 0;
+
+    /* No interfiere con el cursor. */
+    pointer-events: none;
+}
+
+
+
+/* Primer corazón */
+
+.circulo span:hover::before {
+
+    /* Activa la animación. */
+    animation: corazones1 1.8s ease-out infinite;
+}
+
+
+
+/* Segundo corazón */
+
+.circulo span:hover::after {
+
+    /* Activa la segunda animación. */
+    animation: corazones2 1.8s ease-out infinite;
+}
+
+
+
+/* ==================================================
+   ANIMACIÓN DEL PRIMER CORAZÓN
+   ================================================== */
+
+   /* crear animacion pertenciente a css */
+
+@keyframes corazones1 {
+
+    /* Inicio */
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translate(0, 0)
+            scale(0.5);
+    }
+
+
+    /* A los 30% aparece */
+
+    30% {
+
+        opacity: 1;
+    }
+
+
+    /* Final */
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translate(-60px, -70px)
+            scale(1);
+    }
+}
+
+
+
+/* ==================================================
+   ANIMACIÓN DEL SEGUNDO CORAZÓN
+   ================================================== */
+
+@keyframes corazones2 {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translate(0, 0)
+            scale(0.5);
+    }
+
+
+    30% {
+
+        opacity: 1;
+    }
+
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translate(60px, -90px)
+            scale(1);
+    }
+}
+
+
+
+/* ==================================================
+   SERVICIOS
+   ================================================== */
+
+.servicios {
+
+    /* Espacio arriba y abajo. */
+    padding: 100px 8%;
+
+    /* Centra el contenido. */
+    text-align: center;
+}
+
+
+
+/* ==================================================
+   TÍTULOS DE LAS SECCIONES
+   ================================================== */
+
+.titulo-seccion h2,
+.nosotros h2,
+.contacto h2 {
+
+    /* Tamaño del título. */
+    font-size: 42px;
+
+    /* Espacio entre líneas. */
+    line-height: 1.2;
+
+    /* Espacio exterior. */
+    margin: 10px 0 20px;
+}
+
+
+/*
+   Color específico del título de Contacto.
+*/
+
+.contacto h2 {
+
+    color: #352d2d;
+}
+
+
+
+/* ==================================================
+   TEXTO DEBAJO DEL TÍTULO
+   ================================================== */
+
+.titulo-seccion > p:last-child {
+
+    /* Ancho máximo. */
+    max-width: 600px;
+
+    /* Lo centra horizontalmente. */
+    margin: auto;
+
+    /* Color del texto. */
+    color: #000000;
+}
+
+
+
+/* ==================================================
+   TARJETAS DE SERVICIOS
+   ================================================== */
+
+.tarjetas {
+
+    /* Espacio superior. */
+    margin-top: 50px;
+
+    /* Activa Flexbox. */
+    display: flex;
+
+    /* Centra las tarjetas. */
+    justify-content: center;
+
+    /* Espacio entre tarjetas. */
+    gap: 25px;
+
+    /* Permite que las tarjetas bajen
+       cuando no caben. */
+    flex-wrap: wrap;
+}
+
+
+
+/* ==================================================
+   TARJETA
+   ================================================== */
+
+.tarjeta {
+
+    /* Fondo. */
+    background-color: rgb(116, 92, 92);
+
+    /* Ancho. */
+    width: 300px;
+
+    /* Espacio interno. */
+    padding: 35px 30px;
+
+    /* Alineación del texto. */
+    text-align: left;
+
+    /* Esquinas redondeadas. */
+    border-radius: 18px;
+
+    /* Sombra. */
+    box-shadow:
+        0 8px 25px rgba(180, 160, 160, 0.08);
+}
+
+
+
+/* TARJETA DESTACADA central */
+
+.tarjeta.destacada {
+
+    /* Cambia el fondo de la tarjeta central. */
+    background-color: #f1dfda;
+}
+
+
+
+/* ICONO */
+
+.icono {
+
+    /* Tamaño. */
+    font-size: 30px;
+
+    /* Color. */
+    color: #583c3b;
+}
+
+
+
+/* TÍTULO DE LAS TARJETAS */
+
+.tarjeta h3 {
+
+    font-size: 21px;
+}
+
+
+
+/* DESCRIPCIÓN */
+
+.tarjeta p {
+
+    color: #020101;
+}
+
+
+
+/* ENLACE */
+
+.tarjeta a {
+
+    color: #3a2828;
+
+    font-weight: bold;
+}
+
+
+
+/* ==================================================
+   INTERACCIÓN DE LAS TARJETAS
+   ================================================== */
+
+.tarjeta {
+
+    /* Hace que el movimiento y la sombra
+       sean suaves. */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/*
+   Cuando colocamos el mouse sobre una tarjeta.
+*/
+
+.tarjeta:hover {
+
+    /* La tarjeta aumenta ligeramente. */
+    transform: scale(1.05);
+
+    /* Aparece una sombra más grande. */
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ==================================================
+   SOBRE NOSOTROS
+   ================================================== */
+
+.nosotros {
+
+    /* Coloca decoración y texto juntos. */
+    display: flex;
+
+    /* Los centra verticalmente. */
+    align-items: center;
+
+    /* Espacio entre ambas partes. */
+    gap: 80px;
+
+    /* Espacio interno. */
+    padding: 90px 10%;
+
+    /* Fondo. */
+    background-color: #ebe4e2;
+}
+
+
+
+/* DECORACIÓN */
+
+.nosotros-decoracion {
+
+    /* Ocupa el 45% del espacio. */
+    width: 45%;
+
+    /* Altura. */
+    height: 330px;
+
+    /* Fondo. */
+    background-color: #cab6b2;
+
+    /* Forma decorativa. */
+    border-radius: 50% 50% 10% 10%;
+
+    /* Permite centrar la onda. */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+
+/* CÍRCULO INTERIOR */
+
+.onda {
+
+    width: 170px;
+
+    height: 170px;
+
+    /* Borde del círculo. */
+    border: 3px solid rgb(83, 64, 64);
+
+    border-radius: 50%;
+}
+
+
+
+/* TEXTO DE NOSOTROS */
+
+.nosotros-texto {
+
+    width: 55%;
+}
+
+
+/*
+   Selecciona los párrafos de Nosotros,
+   excepto el que tiene la clase pequeno-titulo.
+*/
+
+.nosotros-texto > p:not(.pequeno-titulo) {
+
+    color: #352e2e;
+}
+
+
+
+/* ==================================================
+   FRASE
+   ================================================== */
+
+.frase {
+
+    /* Espacio interno. */
+    padding: 80px 20px;
+
+    /* Centra el texto. */
+    text-align: center;
+
+    /* Fondo oscuro. */
+    background-color: #332525;
+
+    /* Texto blanco. */
+    color: white;
+}
+
+
+.frase p {
+
+    /* Tipo de letra elegante. */
+    font-family: Georgia, serif;
+
+    /* Tamaño. */
+    font-size: 30px;
+
+    /* Cursiva. */
+    font-style: italic;
+
+    /* Ancho máximo. */
+    max-width: 750px;
+
+    /* Centra el texto. */
+    margin: auto;
+}
+
+
+
+/* ==================================================
+   CONTACTO
+   ================================================== */
+
+.contacto {
+
+    /* Espacio interno. */
+    padding: 90px 10%;
+
+    /* Coloca contenido en línea. */
+    display: flex;
+
+    /* Separa las partes. */
+    justify-content: space-between;
+
+    /* Centra verticalmente. */
+    align-items: center;
+
+    /* Espacio entre los elementos. */
+    gap: 50px;
+}
+
+
+/*
+   Selecciona los elementos div que están
+   directamente dentro de Contacto.
+*/
+
+.contacto > div {
+
+    /* Ancho máximo. */
+    max-width: 550px;
+}
+
+
+
+/* ==================================================
+   DATOS DE CONTACTO
+   ================================================== */
+
+.datos {
+
+    /* Fondo blanco. */
+    background-color: white;
+
+    /* Espacio interno. */
+    padding: 35px;
+
+    /* Esquinas redondeadas. */
+    border-radius: 18px;
+
+    /* Sombra. */
+    box-shadow:
+        0 8px 25px rgba(5, 4, 4, 0.08);
+}
+
+
+.datos p {
+
+    color: #4d3d3d;
+}
+
+
+
+/* ==================================================
+   PIE DE PÁGINA
+   ================================================== */
+
+footer {
+
+    /* Espacio interno. */
+    padding: 40px 8%;
+
+    /* Fondo. */
+    background-color: #1d1515;
+
+    /* Color del texto. */
+    color: white;
+
+    /* Centra el contenido. */
+    text-align: center;
+}
+
+
+footer .logo {
+
+    color: white;
+}
+
+
+footer .logo span {
+
+    color: #d9b8b2;
+}
+
+
+footer p {
+
+    color: #cfb2b2;
+}
+
+
+.copyright {
+
+    /* Tamaño pequeño para el copyright. */
+    font-size: 13px;
+
+    /* Espacio superior. */
+    margin-top: 25px;
+}
+
+
+
+/* ==================================================
+   ADAPTACIÓN PARA CELULARES
+   ================================================== */
+
+
+/*
+   @media permite cambiar el diseño dependiendo
+   del tamaño de la pantalla.
+
+   En este caso se aplica cuando la pantalla
+   tiene máximo 800px de ancho.
+*/
+
+@media (max-width: 800px) {
+
+
+    /* ==========================
+       MENÚ EN CELULAR
+       ========================== */
+
+    .encabezado {
+
+        /* Coloca los elementos verticalmente. */
+        flex-direction: column;
+
+        /* Espacio entre ellos. */
+        gap: 15px;
+    }
+
+
+    .menu {
+
+        /* Reduce el espacio entre enlaces. */
+        gap: 15px;
+
+        /* Permite que los enlaces bajen de línea. */
+        flex-wrap: wrap;
+
+        /* Los centra. */
+        justify-content: center;
+    }
+
+
+
+    /* ==========================
+       PORTADA EN CELULAR
+       ========================== */
+
+    .hero {
+
+        /* Coloca los elementos verticalmente. */
+        flex-direction: column;
+
+        /* Centra el texto. */
+        text-align: center;
+
+        /* Espacio entre texto y decoración. */
+        gap: 50px;
+    }
+
+
+    .hero h1 {
+
+        /* Reduce el tamaño del título. */
+        font-size: 42px;
+    }
+
+
+    .botones {
+
+        /* Centra los botones. */
+        justify-content: center;
+    }
+
+
+    .circulo {
+
+        /* Reduce el círculo. */
+        width: 230px;
+
+        height: 230px;
+    }
+
+
+
+    /* ==========================
+       SOBRE NOSOTROS
+       ========================== */
+
+    .nosotros {
+
+        /* Coloca las partes verticalmente. */
+        flex-direction: column;
+    }
+
+
+    .nosotros-decoracion,
+    .nosotros-texto {
+
+        /* Ocupan todo el ancho disponible. */
+        width: 100%;
+    }
+
+
+
+    /* ==========================
+       CONTACTO
+       ========================== */
+
+    .contacto {
+
+        /* Coloca las partes verticalmente. */
+        flex-direction: column;
+
+        /* Centra el texto. */
+        text-align: center;
+    }
+
+}
+
+
+
+/* =====================================================
+   VIDEO DE FONDO PARA CONTACTO
+   ===================================================== */
+
+
+/*
+   La sección Contacto se convierte en el área
+   donde se colocará el video.
+*/
+
+.contacto {
+
+    /* Permite posicionar el video dentro
+       de esta sección. */
+    position: relative;
+ 
+    /* Oculta cualquier parte del video
+       que sobresalga. */
+    overflow: hidden;
+}
+
+
+
+/* =====================================================
+   VIDEO
+   ===================================================== */
+
+.video-fondo {
+
+    /* Separa el video del contenido normal. */
+    position: absolute;
+
+    /* Empieza arriba a la izquierda. */
+    top: 0;
+
+    left: 0;
+
+    /* Ocupa todo el ancho. */
+    width: 100%;
+
+    /* Ocupa todo el alto de Contacto. */
+    height: 100%;
+
+    /* Hace que el video cubra toda la sección
+       sin deformarse. */
+    object-fit: cover;
+
+    /* Coloca el video detrás del contenido. */
+    z-index: 0;
+}
+
+
+
+/* =====================================================
+   CAPA OSCURA
+   ===================================================== */
+
+.capa-fondo {
+
+    /* Se coloca encima del video. */
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    /*
+       Actualmente no tiene color.
+       Por eso el video se ve sin una capa oscura.
+    */
+    background: transparent;
+
+    /* Se coloca encima del video. */
+    z-index: 1;
+}
+
+
+
+/* =====================================================
+   CONTENIDO DE CONTACTO SOBRE EL VIDEO
+   ===================================================== */
+
+.contacto > div:not(.capa-fondo) {
+
+    /*
+       Permite utilizar z-index para controlar
+       qué elementos aparecen delante o detrás.
+    */
+    position: relative;
+
+    /*
+       Coloca el contenido encima del video.
+    */
+    z-index: 2;
+}
+
+
+
+/* =========================================================
+   CONOCE NUESTROS SERVICIOS
+   ========================================================= */
+
+.seccion-detalles {
+
+    /* Permite controlar correctamente
+       la posición de los elementos. */
+    position: relative;
+
+    /* Espacio interno. */
+    padding: 100px 8%;
+
+    /* Color de fondo. */
+    background: #998a7b;
+}
+
+
+
+/* =========================================================
+   ENCABEZADO DE LA SECCIÓN
+   ========================================================= */
+
+.encabezado-detalles {
+
+    /* Centra el contenido. */
+    text-align: center;
+
+    /* Ancho máximo. */
+    max-width: 700px;
+
+    /* Centra el bloque. */
+    margin: 0 auto 60px;
+}
+
+
+.subtitulo-detalles {
+
+    /* Tamaño pequeño. */
+    font-size: 13px;
+
+    /* Espacio entre letras. */
+    letter-spacing: 4px;
+
+    /* Espacio inferior. */
+    margin-bottom: 10px;
+
+    /* Convierte el texto en mayúsculas. */
+    text-transform: uppercase;
+}
+
+
+.encabezado-detalles h2 {
+
+    /* Tamaño del título. */
+    font-size: 42px;
+
+    /* Espacio inferior. */
+    margin-bottom: 20px;
+}
+
+
+.encabezado-detalles p {
+
+    /* Espacio entre líneas. */
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   CONTENEDOR DE LAS TARJETAS DETALLADAS
+   ========================================================= */
+
+
+.contenedor-servicios-detalles {
+
+    /* Activa CSS Grid. */
+    display: grid;
+
+    /*
+       Crea 3 columnas iguales.
+       Esto hace que las tarjetas se coloquen
+       una al lado de la otra.
+    */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Espacio entre las tarjetas. */
+    gap: 30px;
+
+    /* Ancho máximo. */
+    max-width: 1200px;
+
+    /* Centra el contenedor. */
+    margin: auto;
+}
+
+
+
+
+/* =========================================================
+   TARJETA DETALLADA
+   ========================================================= */
+
+.tarjeta-servicio-detalle {
+
+    /* Fondo de la tarjeta. */
+    background: rgb(77, 65, 65);
+
+    /* Esquinas redondeadas. */
+    border-radius: 20px;
+
+    /*
+       Oculta cualquier parte de la imagen
+       que salga de la tarjeta.
+    */
+    overflow: hidden;
+
+    /* Sombra. */
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    /* Hace suave la animación. */
+    transition: all 0.35s ease;
+}
+
+
+
+/* =========================================================
+   MOVIMIENTO DE LA TARJETA
+   ========================================================= */
+
+.tarjeta-servicio-detalle:hover {
+
+    /*
+       Mueve la tarjeta 10px hacia arriba.
+    */
+    transform: translateY(-10px);
+
+    /*
+       Aumenta la sombra.
+    */
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* =========================================================
+   IMAGEN DE LOS SERVICIOS
+   ========================================================= */
+
+.imagen-servicio {
+
+    /* Ocupa todo el ancho. */
+    width: 100%;
+
+    /* Altura de la imagen. */
+    height: 280px;
+
+    /* Oculta lo que sobresalga. */
+    overflow: hidden;
+}
+
+
+.imagen-servicio img {
+
+    /* Ocupa todo el ancho. */
+    width: 100%;
+
+    /* Ocupa toda la altura. */
+    height: 100%;
+
+    /*
+       Hace que la imagen cubra el espacio
+       sin deformarse.
+    */
+    object-fit: cover;
+
+    /* Evita espacios extra debajo de la imagen. */
+    display: block;
+
+    /* Hace suave el zoom. */
+    transition: transform 0.5s ease;
+}
+
+
+
+/* =========================================================
+   ZOOM DE LA IMAGEN
+   ========================================================= */
+
+
+/*
+   Cuando pasamos el mouse sobre la tarjeta,
+   la imagen aumenta ligeramente.
+*/
+
+.tarjeta-servicio-detalle:hover
+.imagen-servicio img {
+
+    /* Aumenta la imagen un 8%. */
+    transform: scale(1.08);
+}
+
+
+
+/* =========================================================
+   CONTENIDO DE LA TARJETA
+   ========================================================= */
+
+.contenido-servicio {
+
+    /* Espacio alrededor del texto. */
+    padding: 30px;
+}
+
+
+.numero-servicio {
+
+    /* Tamaño pequeño. */
+    font-size: 12px;
+
+    /* Espacio entre letras. */
+    letter-spacing: 3px;
+
+    /* Lo hace ligeramente transparente. */
+    opacity: 0.6;
+}
+
+
+.contenido-servicio h3 {
+
+    /* Tamaño del título. */
+    font-size: 24px;
+
+    /* Espacio alrededor. */
+    margin: 12px 0 15px;
+}
+
+
+.contenido-servicio p {
+
+    /* Tamaño del texto. */
+    font-size: 15px;
+
+    /* Espacio entre líneas. */
+    line-height: 1.7;
+
+    /* Espacio inferior. */
+    margin-bottom: 25px;
+}
+
+
+.precio-servicio {
+
+    /* Hace el precio más grueso. */
+    font-weight: bold;
+
+    /* Tamaño. */
+    font-size: 16px;
+}
+
+
+
+/* =========================================================
+   TARJETAS EN TABLETS
+   ========================================================= */
+
+
+/*
+   Cuando la pantalla tiene máximo 900px,
+   pasamos de 3 columnas a 2.
+*/
+
+@media (max-width: 800px) {
+
+    .contenedor-servicios-detalles {
+
+        /* Dos columnas. */
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+
+/* =========================================================
+   TARJETAS EN CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* Reduce el espacio de la sección. */
+
+    .seccion-detalles {
+
+        padding: 70px 20px;
+    }
+
+
+    /* Reduce el tamaño del título. */
+
+    .encabezado-detalles h2 {
+
+        font-size: 32px;
+    }
+
+
+    /*
+       En celulares las tarjetas pasan
+       a una sola columna.
+    */
+
+    .contenedor-servicios-detalles {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Reduce un poco la altura de las imágenes. */
+
+    .imagen-servicio {
+
+        height: 250px;
+    }
+
+}
+
+
+
+/* =========================================================
+   DESPLAZAMIENTO SUAVE
+   ========================================================= */
+
+
+/*
+   Hace que los enlaces internos de la página
+   se desplacen suavemente hacia las secciones.
+*/
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+/* =====================================================
+   SECCIÓN DE RESERVACIÓN
+   ===================================================== */
+
+/* Fondo y espacio general de la sección */
+.seccion-reserva {
+    padding: 100px 8%;
+    background-color: #f3e5e1;
+}
+
+
+/* Título de la sección */
+.titulo-reserva {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+
+/* Título principal */
+.titulo-reserva h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+
+
+/* Texto debajo del título */
+.titulo-reserva > p:last-child {
+    color: #4d3232;
+}
+
+
+/* =====================================================
+   FORMULARIO
+   ===================================================== */
+
+/* Caja principal del formulario */
+.formulario-reserva {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Cada campo del formulario */
+.campo-reserva {
+    margin-bottom: 25px;
+}
+
+
+/* Nombre de cada campo */
+.campo-reserva label {
+    display: block;
+    margin-bottom: 8px;
+    color: #403535;
+    font-weight: bold;
+}
+
+
+/* Cajas de texto y listas */
+.campo-reserva input,
+.campo-reserva select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d5c4c0;
+    border-radius: 12px;
+    background-color: #fcf8f6;
+    color: #403535;
+    font-size: 15px;
+    outline: none;
+}
+
+
+/* Cuando hacemos clic dentro de un campo */
+.campo-reserva input:focus,
+.campo-reserva select:focus {
+    border-color: #a77978;
+}
+
+
+/* =====================================================
+   SERVICIOS ADICIONALES
+   ===================================================== */
+
+.extras-reserva {
+    margin: 30px 0;
+}
+
+
+/* Título de los servicios adicionales */
+.extras-reserva p {
+    margin-bottom: 15px;
+    color: #403535;
+    font-weight: bold;
+}
+
+
+/* Opciones de los servicios */
+.extras-reserva label {
+    display: block;
+    margin-bottom: 12px;
+    color: #4d3232;
+}
+
+
+/* Espacio de los checkbox y radio */
+.extras-reserva input {
+    margin-right: 8px;
+    accent-color: #a77978;
+}
+
+
+/* =====================================================
+   BOTÓN DE RESERVACIÓN
+   ===================================================== */
+
+.boton-reserva {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 35px;
+    text-align: center;
+    background-color: #a77978;
+    color: white;
+    font-weight: bold;
+    border-radius: 35px 20px 35px 20px;
+    transition: 0.3s;
+}
+
+
+/* Efecto al pasar el mouse */
+.boton-reserva:hover {
+    background-color: #8f6564;
+    transform: translateY(-2px);
+    border-radius: 20px 35px 20px 35px;
+}
+
+
+/* =====================================================
+   ADAPTACIÓN PARA CELULARES
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .seccion-reserva {
+        padding: 70px 20px;
+    }
+
+    .titulo-reserva h2 {
+        font-size: 32px;
+    }
+
+    .formulario-reserva {
+        padding: 25px;
+    }
+
+}
+
+/* =====================================================
+   RESERVACIÓN
+   ===================================================== */
+
+.reserva {
+    padding: 100px 8%;
+    background-color: #f3e5e1;
+}
+
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+
+.titulo-reserva {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.titulo-reserva h2 {
+    font-size: 42px;
+    margin: 10px 0 20px;
+}
+
+.titulo-reserva > p:last-child {
+    color: #4d3232;
+}
+
+
+/* =====================================================
+   FORMULARIO DESPLEGABLE
+   ===================================================== */
+
+.formulario-desplegable {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Botón que abre el formulario */
+
+.formulario-desplegable summary {
+    padding: 25px 30px;
+    background-color: #a77978;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Quita el triangulito predeterminado */
+
+.formulario-desplegable summary {
+    list-style: none;
+}
+
+.formulario-desplegable summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Símbolo + */
+
+.formulario-desplegable summary span {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+/* Cuando está abierto */
+
+.formulario-desplegable[open] summary span {
+    transform: rotate(45deg);
+}
+
+
+/* =====================================================
+   CONTENIDO DEL FORMULARIO
+   ===================================================== */
+
+.contenido-formulario {
+    padding: 40px;
+}
+
+.campo-reserva {
+    margin-bottom: 25px;
+}
+
+.campo-reserva label {
+    display: block;
+    margin-bottom: 8px;
+    color: #403535;
+    font-weight: bold;
+}
+
+
+/* Cajas de texto */
+
+.campo-reserva input,
+.campo-reserva select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5c4c0;
+    border-radius: 12px;
+    background-color: #fcf8f6;
+    color: #403535;
+    font-size: 15px;
+    outline: none;
+}
+
+
+/* Efecto al seleccionar un campo */
+
+.campo-reserva input:focus,
+.campo-reserva select:focus {
+    border-color: #a77978;
+}
+
+
+/* =====================================================
+   SERVICIOS ADICIONALES
+   ===================================================== */
+
+.adicionales {
+    margin: 30px 0;
+}
+
+.adicionales p {
+    color: #403535;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.adicionales label {
+    display: block;
+    margin-bottom: 12px;
+    color: #4d3232;
+}
+
+.adicionales input {
+    margin-right: 8px;
+    accent-color: #a77978;
+}
+
+
+/* =====================================================
+   FACTURA / RESUMEN
+   ===================================================== */
+
+.factura {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fcf8f6;
+    border: 1px solid #d8c5c0;
+    border-radius: 18px;
+}
+
+
+/* Encabezado de la factura */
+
+.factura-encabezado {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8c5c0;
+}
+
+.factura-encabezado h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #403535;
+}
+
+.factura-encabezado h3 span {
+    color: #a77978;
+    font-weight: normal;
+}
+
+.factura-encabezado p {
+    margin-top: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a77978;
+}
+
+
+/* Cada línea */
+
+.linea-factura {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e3d6d2;
+}
+
+.linea-factura span {
+    color: #665555;
+}
+
+.linea-factura strong {
+    color: #403535;
+    text-align: right;
+}
+
+
+/* TOTAL */
+
+.total-factura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #a77978;
+}
+
+.total-factura span {
+    font-weight: bold;
+    color: #403535;
+}
+
+.total-factura strong {
+    font-size: 20px;
+    color: #a77978;
+}
+
+
+/* Mensaje final */
+
+.mensaje-factura {
+    text-align: center;
+    margin-top: 25px;
+    color: #665555;
+    font-style: italic;
+}
+
+
+/* =====================================================
+   BOTÓN DE RESERVA
+   ===================================================== */
+
+.boton-reserva {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+
+    background-color: #a77978;
+    color: white;
+
+    text-align: center;
+    font-weight: bold;
+
+    border-radius: 35px 20px 35px 20px;
+
+    transition: 0.3s;
+}
+
+.boton-reserva:hover {
+    background-color: #8f6564;
+    transform: translateY(-2px);
+    border-radius: 20px 35px 20px 35px;
+}
+
+
+/* =====================================================
+   CELULARES
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .reserva {
+        padding: 70px 20px;
+    }
+
+    .titulo-reserva h2 {
+        font-size: 32px;
+    }
+
+    .contenido-formulario {
+        padding: 25px;
+    }
+
+    .linea-factura,
+    .total-factura {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+}

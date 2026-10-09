@@ -11,11 +11,15 @@
 * {
 
     /* Hace que el ancho y alto de los elementos
-       sean más fáciles de controlar. */
+       sean más fáciles de controlar
+       
+       una opcion seria content box, este se centra el en contenido. */
     box-sizing: border-box;
 
     /* Hace que cuando hagamos clic en un enlace
-       de la página, el desplazamiento sea suave. */
+       de la página, el desplazamiento sea suave
+       
+       puede ser auto= hace que sea automatico el movimiento. */
     scroll-behavior: smooth;
 }
 
@@ -51,7 +55,10 @@ body {
 a {
 
     /* Quitamos la línea que normalmente aparece
-       debajo de los enlaces. */
+       debajo de los enlaces
+
+       y otra opcion seria underline.
+        */
     text-decoration: none;
 }
 
@@ -65,6 +72,9 @@ a {
 /*
    .encabezado controla toda la parte superior:
    logo + menú + botón de reservar.
+
+   el . indica una clase y si no lo tiene es porque es etiqueta de html 
+   ejemplo: nav
 */
 
 .encabezado {
@@ -85,7 +95,9 @@ a {
     background-color: #cfc3ba;
 
     /* Hace que el menú se mantenga arriba
-       cuando bajamos por la página. */
+       cuando bajamos por la página. 
+       
+       opcion fixed */
     position: sticky;
 
     /* Indica que debe quedarse pegado

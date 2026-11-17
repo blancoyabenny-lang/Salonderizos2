@@ -67,8 +67,6 @@ a {
 /* ==================================================
    ENCABEZADO Y MENÚ
    ================================================== */
-
-
 /*
    .encabezado controla toda la parte superior:
    logo + menú + botón de reservar.
@@ -1396,7 +1394,7 @@ footer p {
 .tarjeta-servicio-detalle {
 
     /* Fondo de la tarjeta. */
-    background: rgb(77, 65, 65);
+    background: rgb(230, 220, 220);
 
     /* Esquinas redondeadas. */
     border-radius: 20px;
@@ -1432,7 +1430,7 @@ footer p {
        Aumenta la sombra.
     */
     box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.15);
+        0 18px 40px rgba(170, 158, 158, 0.15);
 }
 
 
@@ -1665,7 +1663,7 @@ html {
 
 /* Texto debajo del título */
 .titulo-reserva > p:last-child {
-    color: #4d3232;
+    color: #d4caca;
 }
 
 

@@ -21,7 +21,7 @@
     <!-- Conecta este archivo HTML con nuestro archivo CSS.
          El CSS contiene los colores, tamaños, posiciones,
          animaciones y diseño de la página. -->
-    <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
@@ -59,7 +59,7 @@
         </a>
 
 
-        <!-- MENÚ DE NAVEGACIÓN -->
+        <!-- MENÚ DE NAVEGACIÓN A-->
 
         <nav class="menu">
 
@@ -104,8 +104,6 @@
 
     <main>
 
-
-
         <!-- =================================================
              PORTADA / INICIO
              ================================================= -->
@@ -129,7 +127,7 @@
                 <!-- Texto pequeño superior -->
 
                 <p class="pequeno-titulo">
-                    SALÓN SUPERR ESPECIALIZADO EN RIZOS, los mejores d enuevoooo de nuevo
+                    SALÓN SUPERR ESPECIALIZADO EN RIZOS, los mejores d enuevoooo de
                 </p>
 
 
@@ -137,7 +135,7 @@
 
                 <h1>
                     Tus rizos merecen 
-                    <em>verse superrr increíbles de nuevo aaaa hhhh hhhisda, dio mioo. sexta vez uu</em>
+                    <em>verse super increíbles</em>
                 </h1
 
                 <!-- Descripción del salón -->
@@ -158,7 +156,6 @@
                         Este botón lleva a la sección
                         "Conoce nuestros servicios".
                     -->
-
 
                     <a href="#conoce-servicios" class="boton-principal">
                         Reservar una cita
@@ -663,18 +660,15 @@
             <!-- =============================================
                  VIDEO DE FONDO
                  ============================================= -->
-
             <!--
                 Este video funciona como fondo de la sección
                 de contacto.
-
                 autoplay = comienza automáticamente.
                 muted = empieza sin sonido.
                 loop = se repite continuamente.
                 playsinline = permite reproducirlo correctamente
                 en dispositivos móviles.
             -->
-
             <video
                 class="video-fondo"
                 autoplay
@@ -682,20 +676,16 @@
                 loop
                 playsinline
             >
-
                 <!--
                     El video está dentro de la carpeta "videos".
                 -->
-
                 <source
                     src="videos/rizos.mp4"
                     type="video/mp4"
                 >
-
                 <!-- Mensaje alternativo -->
 
                 Tu navegador no puede reproducir este video.
-
             </video>
 
 
@@ -1055,6 +1045,12 @@
     </footer>
 
 
+<script>document.head.insertAdjacentHTML('beforeend','<style>@keyframes c{to{transform:translateY(110vh) rotate(360deg)}}.p{position:fixed;top:-30px;z-index:9999;pointer-events:none;animation:c linear forwards}</style>');setInterval(()=>{const e=document.createElement('span');e.className='p';e.textContent=['♡','✿','✦','🌸'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*28)+'px';e.style.color=['#ec4899','#f59e0b','#a855f7','#f43f5e'][Math.floor(Math.random()*4)];e.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7000)},150)</script>
+
+
+
+
 </body>
+
 
 </html>
